@@ -30,17 +30,34 @@ class ClockApp extends StatelessWidget {
                   Column(
                     children: <Widget>[
                     Row(
-
                       children: <Widget>[
-                        Text('07:45', style: TextStyle(
-                            fontSize:35,
+                        Column(
+                          children: <Widget>[
+                              Text('07:45', style: TextStyle(
+                            fontSize:35
                         ),),
-                        Text('am', style: TextStyle(
-                            fontSize:15
-                        ),),
+                              Text('Welcome', style: TextStyle(
+                                  fontSize:15),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Padding(
+                              padding: EdgeInsets.all(8),
+                              child: Text('am', style: TextStyle(
+                                fontSize: 15
+                              ),),
+                            )
+//                            Text('am', style: TextStyle(
+//                            fontSize:15
+//                        ),),
+                          ],
+                        )
                       ],
                     ),
-                      Text('Weekend'),
+
+//                      Text('Weekend'),
                     ],
                   ),
                   Switch(
@@ -51,17 +68,137 @@ class ClockApp extends StatelessWidget {
                     ),
             ])),
             ListTile(
-              title: Text('07:45 am'),
-            ),
+                title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Column(
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              Column(
+                                children: <Widget>[
+                                  Text('01:00', style: TextStyle(
+                                      fontSize:35
+                                  ),),
+                                  Text('Welcome', style: TextStyle(
+                                      fontSize:15),
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: Text('pm', style: TextStyle(
+                                        fontSize: 15
+                                    ),),
+                                  )
+//                            Text('am', style: TextStyle(
+//                            fontSize:15
+//                        ),),
+                                ],
+                              )
+                            ],
+                          ),
+
+//                      Text('Weekend'),
+                        ],
+                      ),
+                      Switch(
+                          value: isSwitched,
+                          onChanged : (value) {
+                            isSwitched = value;
+                          }
+                      ),
+                    ])),
             ListTile(
-              title: Text('07:45 am'),
-            ),
+                title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Column(
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              Column(
+                                children: <Widget>[
+                                  Text('02:20', style: TextStyle(
+                                      fontSize:35
+                                  ),),
+                                  Text('Welcome', style: TextStyle(
+                                      fontSize:15),
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: Text('am', style: TextStyle(
+                                        fontSize: 15
+                                    ),),
+                                  )
+//                            Text('am', style: TextStyle(
+//                            fontSize:15
+//                        ),),
+                                ],
+                              )
+                            ],
+                          ),
+
+//                      Text('Weekend'),
+                        ],
+                      ),
+                      Switch(
+                          value: isSwitched,
+                          onChanged : (value) {
+                            isSwitched = value;
+                          }
+                      ),
+                    ])),
             ListTile(
-              title: Text('07:45 am'),
-            ),
-            ListTile(
-              title: Text('07:45 am'),
-            ),
+                title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Column(
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              Column(
+                                children: <Widget>[
+                                  Text('06:30', style: TextStyle(
+                                      fontSize:35
+                                  ),),
+                                  Text('Welcome', style: TextStyle(
+                                      fontSize:15),
+                                  ),
+                                ],
+                              ),
+                              Column(
+                                children: <Widget>[
+                                  Padding(
+                                    padding: EdgeInsets.all(8),
+                                    child: Text('pm', style: TextStyle(
+                                        fontSize: 15
+                                    ),),
+                                  )
+//                            Text('am', style: TextStyle(
+//                            fontSize:15
+//                        ),),
+                                ],
+                              )
+                            ],
+                          ),
+
+//                      Text('Weekend'),
+                        ],
+                      ),
+                      Switch(
+                          value: isSwitched,
+                          onChanged : (value) {
+                            isSwitched = value;
+                          }
+                      ),
+                    ])),
           ],
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
